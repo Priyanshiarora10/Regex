@@ -1,0 +1,152 @@
+Devops Tool 
+dev + ops = development + operation 
+1. Docker
+it is a tool of devops
+install hyperviser work as a virtual box
+
+Container
+7
+
+take a input from user if user give input user than perform the task 
+1 = current file is ...
+2 = create a folder name test 
+3 = file or folder present in the location 
+4 = create a s3 bucket in aws accout name given by user
+5 = run ec2 machine 
+6 = open whatsapp send message 
+ hint - web driver  seleuium 
+
+26/07/22
+
+Image 
+|-o.s.
+|-dependencies
+|-files/L.H(local host)
+|-Software
+|-Application
+		
+In docker all the files, folder, system are known as image
+docker engine
+container
+hyperviser
+image contains all os, dependencies, files/local host, software application
+docker doesnot have os wheras it has images, containers, etc.
+
+command 
+1. docker images __(name of image)_= to see the image in the local host 
+docker hub --> search the image --> 
+2. docker search __(image name)__ = search the image on docker
+3. docker pull __(image name)__ = to download the image for use 
+4. docker run -it __(image name)__/bin/bash = create a container and start the container
+bin =  default folder   
+bash = .sh (type of terminal in linux)
+-i = interactive mode 
+-t = terminal(CLI)
+5. docker run -it --name__(container name)____(image name)__/bin/bash  = drop image into into the specific container 
+
+yum/apt
+yum = linux
+apt = 
+windows --> IIS(web server)
+
+Red Hat linux, Amazon linux = yum is use for only these linux 
+apt 
+6. sudo apt install docker -y = install the docker 
+7. Sevice docker status = check the status of docker -- running / stopped
+8. Docker start __(container name)__
+# let we make 5 container in which 
+2 start 
+3 stop 
+9. docker PS -a = check the container
+PS = progresive service 
+10. Docker PS = show only running container 
+11. D0cker image = to see all the image in the local host
+12. Docker stop = stop the container 
+13. Docker attact __(container name)__ = if we exit the container and again use this container the use this command
+14. Docker rm __(container name)__ = delete the container
+15. Docker -v = see the version 
+16. which docker
+
+	practical
+create an instance in ec2 linux
+connect the instance 
+sudo yum update 
+y
+sudo yum install docker
+# sudo su name = switch root user
+sevice docker status
+service docker start 
+docker -v (version)
+which docker 
+sudo -i
+docker pull ubuntu 
+docker ps
+docker ps -a
+docker image ls
+which docker 
+which ubuntu
+ubuntu -v
+docker -v
+docker image
+docker run -it --name democon ubuntu /bin/bash
+docker search centos 
+docker search chef
+docker run -i -t --name cencon centos /bin/bash
+docker run -i -t --name cencon2 centos /bin/bash
+docker image ls 
+docker ps -a 
+docker start democon
+exit
+docker attach  democon
+ubuntu -v
+docker -v
+cat /etc/os -release (check version in the os)
+
+
+
+
+27/07/22
+
+Task
+
+
+Docker files 
+file editor work as a notepad in windows and vi in linux
+
+notepad --> automation --> container 
+command for the automation is always in capital letter of first letter (like Dockerfile)
+vi Dockerfile
+
+required Commands for automation 
+1. FROM 	 	(for base os) = it is always on TOP
+2.RUN	 	 execute the command
+ 3. COPY	 	 to copy file from base host 
+4. ADD	 	to copy file from internet
+5. MAINTAINER 	tell about the author or owner
+6. WORKDIR 	show thw directory for the work 
+7. ENV 		declare enviornment variables
+
+FROM Ubuntu
+RUN touch "Hello"  /tmp
+COPY test /tmp
+ADD test1 /tmp
+MAINTAINER my name is piyu
+WORKDIR /tmp
+ENV 
+ /tmp = path 
+vi Docker 
+i
+.
+.
+.
+.
+:wq
+touch test
+tar -cvf test.tar 
+
+gzip test.tar.gz
+
+test.tar	
+docker build -t demo
+-t = tag		
+					

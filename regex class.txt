@@ -1,0 +1,219 @@
+27/06/22
+
+GIT
+version control
+git configuration
+repo
+brancing
+marging
+
+Q.1 use only 1 mkdir command to create regex folder and a subfolder with the name as learning.
+Ans - mkdir -p regex/learning
+Q.2 using a mkdir command try to create folder with the name regex 1 , regex2 , regex1001 .
+Ans - mkdir regex{1..1000}
+
+29/06/22
+
+Q1 find out any file whose 3rd character is d?
+Ans - ls ??d*
+Q2 find out whose file which have total five character and whose second last character is s?
+Ans - ls ???s?*
+Q3 find out that file which contain the letter am?
+Ans - ls *am*
+Q4 find out those file whose starting char. can be a or s and the file should be ended with the extension .py
+Ans - ls a* s* *.py / ls [as]*.py
+Q5 find out those file which can start from range character a-k or L-Z or 5-9?(hint 3 condition of or)
+Ans - ls [a-k]* [L-Z]* [5-9]*
+Q6 from the current location go to the document folder and create 2 folder with the name as learning and testing.
+and create two file in each folder(learning & testing) copy the testing folder in learning folder .
+Ans - cp -r /home/priyanshiarora371/piyu/priyal/testing/m.txt /home/priyanshiarora371/piyu/priy
+al/learning    
+
+30/06/22
+hard link 
+soft shortcut 
+Q how to create a shortcut file of the file name piyu.txt?
+Ans - ln -s piyu.txt newpiyu.txt
+
+Q.1 try to find out any files & folder having size less than 20 mb inside the /home directory 
+	a) only try to find out files inside the home/user directory with created by the user your are currently working 
+	b)create a file on desktop with the name as data.txt & Data.txt & DATA.txt & try to find all the data.txt files as case insensitive letters 
+	c)find out any files update or created in last 30 min 
+
+
+Q.2 run cal command automatically afer every 10 min.
+
+01/07/22
+
+hard link = referencing the same inode value(unique) inode = > memory (where data is save )
+assigning similar inode value to the two files
+user
+groups 
+permission
+
+Q 11,,12,24,25,26
+Q1. Whenever you delete a user at the same time the home directory of the same user also delete?
+Q2. find out only files having size less than 10 mb inside desktop {only file no folder } and try to copy the files into the /home/user/document.
+Q3. try to add user into the marketing group
+	-After that add the user into the sales group
+	-make sure the user is the part of both group
+Ans -   sudo groupadd marketig 
+	sudo groupadd sales 
+	sudo useradd ram
+	sudo usermod -G maketing,sales ram
+	cat /etc/group
+Q4. create any four user ram,shyam,babu,aman
+	-set their account to expire in 90 days
+    useradd -e yyyy-mm-dd
+	-create a group sales & marketing add ram,shyam to sales
+	-add babu,aman to marketing
+	-make sure all the four user got the home directory 
+	-give a comment "Capgemini user" at time of creating the user itself 
+[Group should be allocated to all the user at the time of creating the user]   
+Ans -   sudo groupadd marketig 
+	sudo groupadd sales 
+	sudo useradd -p 12345 -G marketing -c "Capgemini user" -d /home/priyanshi/Desktop/piyu -e 2022-10-01 ram
+        sudo useradd -p 12345 -G marketing -c "Capgemini user" -d /home/priyanshi/Desktop/piyu -e 2022-10-01 shyam
+	sudo useradd -p 12345 -G sales -c "Capgemini user" -d /home/priyanshi/Desktop/piyu -e 2022-10-01 babu
+	sudo useradd -p 12345 -G sales -c "Capgemini user" -d /home/priyanshi/Desktop/piyu -e 2022-10-01 aman
+	cat /etc/group 
+	cat /etc/passwd
+Q5 you need to create a user with the user id as 5000
+	- at the saame time creating the user set the password for the user
+	- set the secondary group of the user as (sales) 
+	- also give the home directory to the user you are creating 
+	- also add the comment as in form of date when creating user 
+	- set the shell of that user to {sh shell} [using single command]
+Ans - sudo useradd -u 5000 -p 12345 -G sales -c "2022/07/07" -d /home/priyanshi/Desktop/piyu -s /bin/bash priya
+	cat /etc/group 
+	cat /etc/passwd
+
+4/10/22
+file i/o redirection
+cal < abc.txt = old file delete new file create & new data contain
+
+Permission 
+R read 
+W write 
+X excute
+ 
+files 
+Command			Files			 Folders/directory
+R (4)		Read content of files		List files & folder
+W(2)		Modify content in file		Create / delete the file 
+X(1)		Program run			Change the directory
+
+UGO 
+U - User 
+G - group
+O - Other 
+
+Q1. you have to create a command which will show you u.s timing.
+{no use of lar }
+Ans - TZ='united state' Date
+Q2. create a folder testing assign a folder to a group and create 2 user namen & aditya.
+give permission that only those user who create the file only they can delete the file .
+Q3. create a file and make sure every time wehenever you create h file you should have rwx permission for user 
+you should have rwx for group and read execute for other
+Q4. we have to create 5 gb file in 1 sec 
+
+5/07/22
+
+Q create 10 random files on any folder of desktop location now try to find out those files which is having a word test inside the file 
+Q now find out those those file which are crated 30 min before and create the archival of all those file inside current location when you have created the archival  try to extract the file inside the document folder but from current location do not use move command.
+
+7/7/22
+
+EC2 elastic computer cloud
+AMI = Amazon machine image 
+IAM = identity and access management  
+Load Balancer 
+Auto scalling 
+how to convert CLI - GOI
+command line interface 
+
+
+8/7/22
+
+S3  Simple storage services
+to storage 
+app
+os
+ACL --> Access control list
+KMS --> key management service
+STS --> Simple token services
+
+IAM = identity & access management
+user 5000
+group 300
+roles
+policies
+
+1. Shared access for AWS account 
+2. Granular access (read/write/list)|(level of employee)
+3. Secure access to EC2 application
+ EC2 access
+4. MFA - multifactor authantication
+a) security key - hardware device used for authantication our account
+b) authanticator app
+5. Identity federation 
+6. Identity information for assurance
+	-cloud trail (which user is access/detail of the user)
+7. PCI-DSS payment car industry - data security standard
+8. Eventually consistant 
+
+IAM --> free of cost 
+
+IAM Lifecycle 
+
+principle-->request-->authentication-->authorize-->action/operation
+
+i) Principle
+user/application/federation/role
+ii) Request(CLI management console)
+iii) Authentication
+iv) Authorize
+v) Action/Operation
+
+task
+cross region migration
+1. Launch an instance (mumbai ap_south_1a)
+Iam user REGex
+migrate instance from mumbai to north virginia
+
+sudo yum update 
+y
+sudo yum install httpd
+y
+sudo service httpd start
+y
+vi /var/www/http/index.html
+i
+write something in the file 
+esc -> :wq -> enter
+sudo chkconfig httpd on
+copy the public id 
+paste on new tab browser
+go to the instance
+stop the instance
+Action -> image and temolates -> create image 
+go to ami 
+copy the ami
+
+
+create IAM user and give full acces of ec2 
+
+20/7/22
+Amazon Elastic Beanstalk 
+- with server - EC2 , EBS
+- serverless - IAM 
+
+EBS = automization of EC2 
+-End-to-end web application management.
+-Amazon Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.
+IIS - Internet Information Service
+
+Amazon Recognition
+match the face 
+
+

@@ -1,0 +1,173 @@
+  1  pwd
+    2  ls
+    3  man ls
+    4  mkdir test
+    5  ls
+    6  rmdir test
+    7  -p test/regex
+    8  mkdir -p test/regex
+    9  ls test
+   10  touch data.txt
+   11  rm data.txt
+   12  man
+   13  man rm
+   14  rm -d test
+   15  rm -r test
+   16  ls
+   17  mkdir -p test/regex
+   18  rm -rv test
+   19  mkdir -p test/regex
+   20  pwd
+   21  cd test/regex/
+   22  cd -
+   23  mkdir source destination
+   24  ls
+   25  cd source/
+   26  touch data.txt
+   27  ls
+   28  pwd
+   29  cd ..
+   30  pwd
+   31  ls
+   32  pwd
+   33  ls
+   34  cd source/
+   35  pwd
+   36  ls
+   37  ls ../destination/
+   38  ls
+   39  man cp
+   40  cp
+   41  cp data.txt destination
+   42  cp data.txt ../destination/
+   43  ls ../destination/
+   44  cd ../destination/
+   45  pwd
+   46  ls
+   47  rm data.txt
+   48  cd -
+   49  cd/home/
+   50  cd ../destination/
+   51  cd/home/
+   52  cd /home/
+   53  pwd
+   54  cd -
+   55  cd ../..
+   56  pwd
+   57  cd priyanshiarora371/destination/
+   58  data
+   59  date
+   60  cal
+   61  cel
+   62  ls ../source/
+   63  ls
+   64  mv ../source/data.txt .
+   65  ls
+   66  ../source/
+   67  ls
+   68  vi data.txt
+   69  cat data.txt
+   70  mv data.txt new.txt
+   71  ls
+   72  cat new.txt
+   73  history
+   74  rm -rf destination/ source/ test/
+   75  ls
+   76  rm new.txt
+   77  ls
+   78  mkdir regex
+   79  ls
+   80  cd regex/
+   81  touch amzon.txt abc.txt attitre.txt wtp.txt
+   82  touch ireland.txt
+   83  ls
+   84  mkdir piyu priyal nainsi
+   85  ls
+   86  ls amzon.txt
+   87  ls a*
+   88  ls am*
+   89  mkdir regex
+   90  ls
+   91  cd regex/
+   92  touch amzon.txt abc.txt attire.txt wtp.txt
+   93  mkdir piyu priya priyal
+   94  ls
+   95  ls a*
+   96  ls am*
+   97  ls *.txt
+   98  touch a
+   99  ls a
+  100  ls a?
+  101  ls a?*
+  102  mkdir piyu
+  103  cd piyu
+  104  mkdir muskan ranu piyu priyal
+  105  touch tiya.txt pradeep.txt prdes.py monkess.txt sona.txt amzon.pxt spray.py pridse.txt
+
+
+
+ Manual page useradd(8) line 1 (press h for help or q to quit)
+  106  ls
+  107  git status
+  108  ls
+  109  find $HOME *.txt
+  110  find $HOME a*
+  111  ls
+  112  history
+  113  history ls
+  114  cd piyu
+  115  ls
+  116  cd ..
+  117  rm piyu
+  118  cd piyu
+  119  pwd
+  120  ls
+  121  ls ??d*
+  122  ls ???s?*
+  123  ???s*
+  124  ls ???s*
+  125  touch tidse
+  126  ls ???s*
+  127  ls am*
+  128  ls a* s*
+  129  ls a* s* *.py
+  130  cd priyal
+  131  mkdir learning testing
+  132  ls
+  133  cd learning
+  134  touch data.txt file.txt
+  135  ls
+  136  cd ../testing
+  137  touch p.txt m.txt
+  138  history
+  139  cp testing learning
+  140  cp ../learning/p.txt m.txt
+  141  cp ../testing/p.txt m.txt
+  142  cd ../learning
+  143  ls
+  144  mv ../testing/p.txt
+  145  cd ../testing
+  146  ls
+  147  cd ..
+  148  cp /testing /learning
+  149  cd learning
+  150  ls
+  151  cd ..
+  152  cp /home/priyanshiarora371/piyu/priyal/testing /home/priyanshiarora371/piyu/priyal/learning
+  153  cp -r /home/priyanshiarora371/piyu/priyal/testing /home/priyanshiarora371/piyu/priyal/learning
+  154  cd learning
+  155  ls
+  156  cd ..
+  157  cp -r /home/priyanshiarora371/piyu/priyal/testing/p.txt m.txt /home/priyanshiarora371/piyu/priyal/learning
+  158  cp -r /home/priyanshiarora371/piyu/priyal/testing/p.txt/m.txt /home/priyanshiarora371/piyu/priyal/learning
+  159  cp -r /home/priyanshiarora371/piyu/priyal/testing/p.txt /home/priyanshiarora371/piyu/priyal/learning
+  160  cp -r /home/priyanshiarora371/piyu/priyal/testing/m.txt /home/priyanshiarora371/piyu/priyal/learning
+  161  cd learning
+  162  ls
+  163  cd ..
+  164  ls
+  165  ls [as]*.py
+  166  history
+
+
+ Manual page useradd(8) line 1 (press h for help or q to quit)

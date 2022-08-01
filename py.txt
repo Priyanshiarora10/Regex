@@ -1,0 +1,341 @@
+# Basic vaiables and print statement.
+>>> a = 6     
+>>> b = 10
+>>> c = 3 
+>>> print(c)
+3
+>>> print(a)
+6
+>>> print(6)
+6
+>>> number = 100
+>>> name = 'Shivank'
+>>> is_true = True
+>>> flaot_number = 43.32     
+>>> type(number)
+<class 'int'>
+>>> type(name)
+<class 'str'>
+>>> type(is_true)
+<class 'bool'>
+>>> type(flaot_number)
+<class 'float'>
+>>> a = '50'
+>>> print(type(a))
+<class 'str'>
+>>> a = 50
+>>> print(type(a))
+<class 'int'>
+
+>>> comp = 5 + 7j
+>>> type(comp)
+<class 'complex'>
+>>> 
+
+>>> comp = 5 + 7j
+>>> type(comp)
+<class 'complex'>
+>>> a = 5
+>>> b = 10
+>>> total = a + b
+>>> print(total)
+15
+>>> mult = a * b
+>>> print(mult)
+50
+>>> div = a / b
+>>> print(div)
+0.5
+>>> subs = a - b
+>>> print(subs)
+-5
+>>> b / a
+2.0
+>>> type(b / a)
+<class 'float'>
+>>> b // a
+2
+>>> type(b // a)
+<class 'int'>
+>>> 15/4
+3.75
+>>> 15//4
+3
+>>> 
+>>> print('Shivank', 'Gautam', 43)
+Shivank Gautam 43
+>>> senetence = "It's a senetence"
+>>> senetence
+"It's a senetence"
+>>> """It's is a "" string"""
+'It\'s is a "" string'
+>>>         
+>>> fname = 'Shivank'
+>>> fname[0]
+'S'
+>>> fname[1]
+'h'
+>>> fname[2]
+'i'
+>>> fname[-1]
+'k'
+>>> fname[-2]
+'n'
+>>> fname[0:4] # the 0 is inclusive but 4 is not
+'Shiv'
+>>> fname[1:5]
+'hiva'
+>>> 
+
+>>> fname[1:5]
+'hiva'
+>>> fname[5]
+'n'
+>>> fname[-2]
+'n'
+>>> 
+
+>>> fname[1:5]
+'hiva'
+>>> fname[5]
+'n'
+>>> fname[-2]
+'n'
+>>> 
+>>> fname = 'Shivank'
+>>> fname[0:7]
+'Shivank'
+>>> fname[0:7:1]
+'Shivank'
+>>> fname[0:7:2]
+'Siak'
+>>> fname[0:7:3]
+'Svk'
+>>> fname[0:7:1
+... ^C
+KeyboardInterrupt
+>>> fname[0:7]
+'Shivank'
+>>> fname[0:7:1]
+'Shivank'
+>>> fname[0:7:]
+'Shivank'
+>>> # if i ll not write any value after sencon colon, by default the value(jump) ius 
+>>> 
+>>> fname[:7:1]
+'Shivank'
+>>> # SYNTAX: fname[starting_index: ending_index+1: jump]
+>>> fname[::]
+'Shivank'
+>>> """ staring value: 0, ending_index: len(string), jump: 1"""
+' staring value: 0, ending_index: len(string), jump: 1'
+>>> fname[::]
+'Shivank'
+>>> fname[:6:]
+'Shivan'
+>>> fname[1:6:]
+'hivan'
+>>> fname[1:6:2]
+'hvn'
+>>> fname = 'Shivank'
+>>> fname[-1::-1]
+'knavihS'
+>>> fname[-1::1]
+'k'
+>>> fname[-1:7:-1]
+''
+>>> fname[-2::1]
+'nk'
+>>> fname[-1:7]
+'k'
+>>> fname[-1::-1
+... ]
+'knavihS'
+>>> fname[-1:-5:-2]
+'ka'
+>>> fname[-1:-7:-1]
+'knavih'
+>>> fname[-1:7]
+'k'
+>>>  
+
+
+15JULY2020
+
+>>> fname = 'Shivank'
+>>> fname.upper()
+'SHIVANK'
+>>> print(fname)
+Shivank
+>>> fname = fname.upper()
+>>> print(fname)
+SHIVANK
+>>> fname
+'SHIVANK'
+>>> fname.lower()
+'shivank'
+>>> fname
+'SHIVANK'
+>>> fname = fname.lower()
+>>> fname
+'shivank'
+>>> 
+
+first_name = 'Shivank'
+last_name = 'Gautam'
+
+fname_in_caps = first_name.upper()
+lname_in_lower = last_name.lower()
+
+# print(first_name)
+# print(last_name)
+# print('---------------')
+# print(fname_in_caps)
+# print(lname_in_lower)
+
+
+
+# introduction = 'Hi, My name is {fname} {lname}'.format(fname=first_name, lname=last_name)
+
+introduction = f'Hi, My name is {first_name} {last_name}'
+print(introduction)
+
+
+
+
+take a string and and integer value in input from user and print the string from it's index one(1) with the jump of taken integer value from user.
+
+
+Take Two inputs from the user:
+    1. some_string: str
+    2. some_number: int
+    
+now print the string in a fashion that
+  - it starts from index 1.
+  - it ends on the last index.
+  - jump should be of some_number(taken from user.)
+
+Q take input from the user and print the character whose value is e1
+
+Q take input from user input are 16 Char 
+1 capital letter
+1 small no. 
+1 no.
+1 special char
+
+those condition are not verify then again input from user 
+
+priority 
+bitwise operator
+regular expression 
+
+18July2022
+Type "help", "copyright", "credits" or "license" for more information.
+>>> tup = (1,2,3,4,5,'Hello World')
+>>> type(tup)
+<class 'tuple'>
+>>> tup[4]
+5
+>>> tup[4] = 'Something diffrent'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> len(tup)
+6
+>>> tup[3:]
+(4, 5, 'Hello World')
+>>> 
+st = {1,2,2,3}
+bt = {3,4,5}
+
+union_of_st = st.union(bt)
+print(union_of_st)
+
+intersection_of_st = st.intersection(bt)
+print(intersection_of_st)
+
+
+map_ = {
+    'name': 'Shivank',
+    'age': 25,
+    'salary': 25000,
+    'is_married': False,
+    3000: 'Any value',
+    'languages': ['Python', 'Go']
+}
+
+# print(map_['name']) # Shivank
+# print(map_['age'])  # 25
+# print(map_['salary']) # 25000
+# print(map_['is_married']) # False
+# # print(map_[3000]) # Any value
+
+print(map_['languages']) # ['Python', 'Go']
+print(map_['languages'][0]) # Python
+print(map_['languages'][1]) # Go
+
+>>> lst_1 = [1,2,3]
+>>> lst_2 = [98,99,100]
+>>> lst_1.append(lst_2)
+>>> lst_1
+[1, 2, 3, [98, 99, 100]]
+>>> lst_2
+[98, 99, 100]
+>>> lst_1 = [1,2,3]  
+>>> lst_1
+[1, 2, 3]
+>>> lst_2
+[98, 99, 100]
+>>> lst_1.extend(lst_2)
+>>> lst_1
+[1, 2, 3, 98, 99, 100]
+>>> 
+
+for i in 'Shivank':
+    print(i)
+
+print("----------------------------------------------------")
+
+for i in range(len('Shivank')): # range(len('Shivank')) --> [0,1,2,3,4,5,6]
+    print(i, ':', 'Shivank'[i])
+
+print("----------------------------------------------------")
+
+s = 'Shivank'
+for i in s:
+    print(i)
+
+print('----------------------------------------------------')
+
+for i in range(len(s)):
+    print(i, s[i])
+
+print('----------------------------------------------------')
+
+conditional ques
+
+for i in range(3):
+    p = int(0)
+    q = int(0)
+    r = int(0)
+    s = int(0)
+    psd = input("Enter a password ")
+    
+    if len(psd) > 0 and len(psd) <= 5:
+            
+        for j in range(0,len(psd)):
+                
+            if ord(psd[j]) >= 48 and ord(psd[j]) <= 57:
+                p = int(1)  # numbers
+            if ord(psd[j]) >= 65 and ord(psd[j]) <= 90:
+                q = int(1)  # Capital Alphabets
+            if ord(psd[j]) >= 97 and ord(psd[j]) <= 122:
+                r = int(1)  # small alphabets
+            if ord(psd[j]) >= 33 and ord(psd[j]) <= 47 or ord(psd[j])  == 64 :
+                s = int(1)   # special symbols
+    
+    if p == 1 and q == 1 and r == 1 and s == 1:
+        print('valid password')
+        break
+    else:
+        continue
